@@ -1,2 +1,2 @@
-# 1819_AA
-Alex, Yuan, and Lu.
+# 1819AA_Resources
+Branch for online resource.
