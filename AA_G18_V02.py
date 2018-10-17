@@ -19,12 +19,12 @@ def preprocess(s):
 # In[16]:
 
 
-#Claim topic classification
+#Claim topic as classification object, in total 3 classes
 
-#datatype covert to process
+#datatype covert for processing
 
 #load data
-data=pd.read_csv('c_train.csv',sep=',',encoding='utf-8',low_memory=False) 
+data=pd.read_csv('c_test.csv',sep=',',encoding='utf-8',low_memory=False) 
 
 #panda dataframe convert to list so we can process it later
 t1 = data[data['topic']=='Religion does more harm than good']
@@ -108,7 +108,7 @@ print("NuSVC_classifier accuracy percent:", (nltk.classify.accuracy(NuSVC_classi
 # In[14]:
 
 
-#evidence support or not of a topic classification, same idea same process
+#evidence support or not of a topic as classification object, in total 4 classes, same idea same process
 data1=pd.read_csv('e_train.csv',sep=',',encoding='utf-8',low_memory=False) 
 
 #count1 = data1.groupby('the concept of the topic').candidate.count()
